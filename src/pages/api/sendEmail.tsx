@@ -6,10 +6,10 @@ export default async (req: any, res: any) => {
 
     // Create a transporter object
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // Use your email service
+      service: 'gmail', 
       auth: {
-        user: process.env.EMAIL_USER, // Your email address
-        pass: process.env.EMAIL_PASS, // Your email password or app password
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS, 
       },
     });
 
@@ -17,7 +17,7 @@ export default async (req: any, res: any) => {
     const mailOptions = {
       from: email,
       to: process.env.EMAIL_USER, // Your email address
-      subject: `Contact form submission from ${name}`,
+      subject: `Submit inquiries or feedback submission from ${name}`,
       text: `Name: ${name}\nID: ${id}\nEmail: ${email}\nMessage: ${message}`,
     };
 

@@ -52,7 +52,7 @@ const Navbar = () => {
       <motion.div className={`absolute left-1/2 transform -translate-x-1/2 top-0 mt-1 drop-shadow-lg`}>
         <Link href={`/`}>
           <motion.img
-            src="/logo.png"
+            src="/home/logo.png"
             alt="logo"
             width={120}
             height={120}

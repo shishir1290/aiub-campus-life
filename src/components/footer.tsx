@@ -12,13 +12,13 @@ const footer = () => {
       <div className="bg-zinc-900">
         <div className="grid grid-cols-4 mx-72 space-x-20 pt-4 pb-6">
           <div>
-            <img src="/logo.png" alt="logo" className=" w-36 text-center" />
+            <img src="/home/logo.png" alt="logo" className=" w-36 text-center" />
             <p className=" text-gray-400 font-bold w-56">
               American International University-Bangladesh (AIUB)
             </p>
             <p className="flex text-gray-400 w-56 mt-2">
               <img
-                src="/location.png"
+                src="/home/location.png"
                 className="w-4 mr-1 pb-14 pt-1"
                 alt="location icon"
               />
@@ -27,7 +27,7 @@ const footer = () => {
               </span>
             </p>
             <div className="flex  text-gray-400 w-56">
-              <img src="/email.png" className="w-5 mr-1" alt="email icon" />
+              <img src="/home/email.png" className="w-5 mr-1" alt="email icon" />
               <span>
                 <a href="mailto:info@aiub.edu" className="text-gray-400">
                   info@aiub.edu
@@ -37,8 +37,8 @@ const footer = () => {
           </div>
 
           <div className="flex flex-col">
-            <p className="text-gray-200 text-2xl">Become AIUBian</p>
-            <hr className="bg-sky-500 h-0.5 w-full mt-2" />
+            <p className="text-gray-200 text-2xl">Become AIUBian <hr className="bg-sky-500 h-0.5 w-full mt-2" /></p>
+            
 
             <p className="text-gray-400 text-lg hover:underline hover:text-gray-100 cursor-pointer">Future Students</p>
             <p className="text-gray-400 text-lg hover:underline hover:text-gray-100 cursor-pointer">On Campus </p>
@@ -49,8 +49,8 @@ const footer = () => {
           </div>
 
           <div className="flex flex-col w-72">
-            <p className="text-gray-200 text-2xl">Academics</p>
-            <hr className="bg-sky-500 h-0.5 w-full mt-2" />
+            <p className="text-gray-200 text-2xl">Academics <hr className="bg-sky-500 h-0.5 w-full mt-2" /></p>
+            
 
             <p className="text-gray-400 text-lg hover:underline hover:text-gray-100 cursor-pointer">Academic Calendar</p>
             <p className="text-gray-400 text-lg hover:underline hover:text-gray-100 cursor-pointer">Academic Regulations </p>
@@ -61,8 +61,8 @@ const footer = () => {
           </div>
 
           <div className="flex flex-col w-72">
-            <p className="text-gray-200 text-2xl">Research</p>
-            <hr className="bg-sky-500 h-0.5 w-full mt-2" />
+            <p className="text-gray-200 text-2xl">Research <hr className="bg-sky-500 h-0.5 w-full mt-2" /></p>
+            
 
             <p className="text-gray-400 text-lg hover:underline hover:text-gray-100 cursor-pointer">AJBE</p>
             <p className="text-gray-400 text-lg hover:underline hover:text-gray-100 cursor-pointer">AJSE</p>

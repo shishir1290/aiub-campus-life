@@ -29,7 +29,7 @@ const ImageSlider = ({
           <figcaption className="absolute px-4 text-lg text-white top-6">
             <div className="bg-white bg-opacity-70 p-2 rounded-lg m-10">
               <img
-                src="/aiubstorylogo.png"
+                src="/home/aiubstorylogo.png"
                 alt="AIUB Story Logo"
                 className=" h-28"
               />
