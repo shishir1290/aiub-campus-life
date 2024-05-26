@@ -36,7 +36,7 @@ const ImageSlider = ({
             </div>
           </figcaption>
 
-          <figcaption className="absolute inset-x-0 flex justify-center top-2 px-4 text-lg text-white">
+          <figcaption className="absolute inset-x-0 flex justify-center top-10 px-4 text-lg text-white">
             <div className="md:text-4xl font-bold text-sky-700 text-center bg-white bg-opacity-60 md:w-96 p-4 rounded-lg">
               Welcome to AIUB
             </div>

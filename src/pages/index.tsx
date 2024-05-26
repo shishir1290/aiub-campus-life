@@ -85,7 +85,7 @@ export default function Home() {
     <div className="w-screen">
       <Navbar />
       <section className="Home" id="home">
-        <div className=" pt-20 md:pt-40 h-screen w-screen">
+        <div className=" pt-20 md:pt-20 h-screen w-screen">
           <div className="">
             <ImageSlider images={home_images} />
           </div>
@@ -124,7 +124,10 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-end mt-4 mr-8 opacity-50 hover:opacity-100">
-              <Link href="/activities" className="text-xl text-blue-500 hover:font-bold">
+              <Link
+                href="/activities"
+                className="text-xl text-blue-500 hover:font-bold"
+              >
                 <div className="flex items-right">
                   <p>Show more details</p>
                   <img src="/home/arrow.gif" className="w-8 ml-2" />
@@ -136,13 +139,13 @@ export default function Home() {
       </section>
 
       <section className="clubs" id="clubs">
-  <div className="py-10 md:py-20 lg:h-screen">
-    <div className="text-2xl text-blue-600 md:ml-8 lg:ml-96 mb-2">
-      <p className="p-2">
-        AIUB Clubs
-        <hr className="w-36 border-2 border-blue-600 rounded-xl" />
-      </p>
-    </div>
+        <div className="py-10 md:py-20 lg:h-screen">
+          <div className="text-2xl text-blue-600 md:ml-8 lg:ml-96 mb-2">
+            <p className="p-2">
+              AIUB Clubs
+              <hr className="w-36 border-2 border-blue-600 rounded-xl" />
+            </p>
+          </div>
 
           <div className="grid grid-cols-2 gap-4 max-w-full md:w-auto md:grid-cols-3 md:mx-24 lg:mx-84 xl:mx-96">
             <div className="bg-slate-200 p-4 rounded-lg shadow-xl shadow-gray-400 hover:shadow-gray-600 w-full h-auto">
@@ -258,160 +261,161 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-center mt-4 ml-96 pl-48 opacity-70 hover:opacity-100">
-            <Link
-              href="/clubs"
-              className="text-xl text-blue-500 hover:font-bold"
-            >
-              <div className="flex items-center">
-                <p>Show more details</p>
-                <img src="/home/arrow.gif" className="w-8 ml-2" />
-              </div>
-            </Link>
-          </div>
+          <div className="flex justify-end mt-4 mr-8 opacity-50 hover:opacity-100">
+              <Link
+                href="/clubs"
+                className="text-xl text-blue-500 hover:font-bold"
+              >
+                <div className="flex items-right">
+                  <p>Show more details</p>
+                  <img src="/home/arrow.gif" className="w-8 ml-2" />
+                </div>
+              </Link>
+            </div>
         </div>
       </section>
 
       <section className="facilities" id="facilities">
-  <div className="pt-10 md:pt-20 lg:h-screen">
-    <div className="text-2xl text-blue-600 md:ml-8 lg:ml-96 mb-2">
-      <p className="p-2">
-        Facilities
-        <hr className="w-36 border-2 border-blue-600 rounded-xl" />
-      </p>
-    </div>
+        <div className="pt-10 md:pt-20 lg:h-screen">
+          <div>
+          <div className="text-2xl text-blue-600 md:ml-8 lg:ml-96 mb-2">
+            <p className="p-2">
+              Facilities
+              <hr className="w-36 border-2 border-blue-600 rounded-xl" />
+            </p>
+          </div>
 
-            <div className="grid grid-cols-3 gap-4 w-full md:w-auto md:mx-24 lg:mx-36 xl:mx-48">
-              {/* library */}
-              <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
-                <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
-                  Library
+          <div className="grid grid-cols-3 gap-4 w-full md:w-auto md:mx-24 lg:mx-36 xl:mx-48">
+            {/* library */}
+            <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
+              <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
+                Library
+              </p>
+              <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <img
+                  src="/home/library2.jpg"
+                  alt="library"
+                  className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
+                />
+                <p className="text-left bg-white p-2 rounded-lg hidden md:block">
+                  The AIUB Library is spread across an area of around 11,590 sq.
+                  ft., located on the top floor of the iconic spherical building
+                  in the heart of the campus, with a 360-degree view of the
+                  stunning serenity.
                 </p>
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                  <img
-                    src="/home/library2.jpg"
-                    alt="library"
-                    className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
-                  />
-                  <p className="text-left bg-white p-2 rounded-lg hidden md:block">
-                    The AIUB Library is spread across an area of around 11,590
-                    sq. ft., located on the top floor of the iconic spherical
-                    building in the heart of the campus, with a 360-degree view
-                    of the stunning serenity.
-                  </p>
-                </div>
               </div>
+            </div>
 
-              {/* laboratory */}
-              <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
-                <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
-                  Laboratory
+            {/* laboratory */}
+            <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
+              <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
+                Laboratory
+              </p>
+              <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <img
+                  src="/home/laboratory.jpg"
+                  alt="laboratory"
+                  className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
+                />
+                <p className="text-left bg-white p-2 rounded-lg hidden md:block">
+                  The largest virtual lab setup is the South Asian region. 5
+                  computer labs, 19 engineering labs, 10 design studios, 4
+                  physics labs, 2 chemistry labs, and 1 language lab with 40
+                  workstations.
                 </p>
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                  <img
-                    src="/home/laboratory.jpg"
-                    alt="laboratory"
-                    className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
-                  />
-                  <p className="text-left bg-white p-2 rounded-lg hidden md:block">
-                    The largest virtual lab setup is the South Asian region. 5
-                    computer labs, 19 engineering labs, 10 design studios, 4
-                    physics labs, 2 chemistry labs, and 1 language lab with 40
-                    workstations.
-                  </p>
-                </div>
               </div>
+            </div>
 
-              {/* Sports */}
-              <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
-                <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
-                  Sports
+            {/* Sports */}
+            <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
+              <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
+                Sports
+              </p>
+              <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <img
+                  src="/home/sports.jpg"
+                  alt="sports"
+                  className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
+                />
+                <p className="text-left bg-white p-2 rounded-lg hidden md:block">
+                  Engaging sports facilities sprawling across the campus with a
+                  full-length football field, cricket practice-pitch,
+                  basketball, tennis, badminton, volleyball courts, and an open
+                  gallery with a seating capacity of around 500.
                 </p>
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                  <img
-                    src="/home/sports.jpg"
-                    alt="sports"
-                    className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
-                  />
-                  <p className="text-left bg-white p-2 rounded-lg hidden md:block">
-                    Engaging sports facilities sprawling across the campus with
-                    a full-length football field, cricket practice-pitch,
-                    basketball, tennis, badminton, volleyball courts, and an
-                    open gallery with a seating capacity of around 500.
-                  </p>
-                </div>
               </div>
+            </div>
 
-              {/* indoor games */}
-              <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
-                <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
-                  Indoors Games
+            {/* indoor games */}
+            <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
+              <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
+                Indoors Games
+              </p>
+              <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <img
+                  src="/home/indoor.jpg"
+                  alt="indoor games"
+                  className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
+                />
+                <p className="text-left bg-white p-2 rounded-lg hidden md:block">
+                  A dedicated indoor games room with table tennis, carom, chess,
+                  and other board games to keep the students engaged and
+                  entertained during their leisure time.
                 </p>
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                  <img
-                    src="/home/indoor.jpg"
-                    alt="indoor games"
-                    className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
-                  />
-                  <p className="text-left bg-white p-2 rounded-lg hidden md:block">
-                    A dedicated indoor games room with table tennis, carom,
-                    chess, and other board games to keep the students engaged
-                    and entertained during their leisure time.
-                  </p>
-                </div>
               </div>
+            </div>
 
-              {/* gym */}
-              <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
-                <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
-                  AIUB Gymnasium
+            {/* gym */}
+            <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
+              <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
+                AIUB Gymnasium
+              </p>
+              <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <img
+                  src="/home/gym.jpg"
+                  alt="gym"
+                  className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
+                />
+                <p className="text-left bg-white p-2 rounded-lg hidden md:block">
+                  There is a fully-equipped gymnasium on campus, to encourage
+                  the physical fitness and well-being of the students,
+                  faculties, and officials.
                 </p>
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                  <img
-                    src="/home/gym.jpg"
-                    alt="gym"
-                    className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
-                  />
-                  <p className="text-left bg-white p-2 rounded-lg hidden md:block">
-                    There is a fully-equipped gymnasium on campus, to encourage
-                    the physical fitness and well-being of the students,
-                    faculties, and officials.
-                  </p>
-                </div>
               </div>
+            </div>
 
-              {/* childcare */}
-              <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
-                <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
-                  AIUB Childcare
+            {/* childcare */}
+            <div className="bg-slate-200 p-4 rounded-lg shadow-lg shadow-gray-400 hover:shadow-gray-700 transform hover:scale-105 transition-transform">
+              <p className="mt-2 text-2xl text-center text-sky-600 font-bold pb-4">
+                AIUB Childcare
+              </p>
+              <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <img
+                  src="/home/childcare.jpg"
+                  alt="childcare"
+                  className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
+                />
+                <p className="text-left bg-white p-2 rounded-lg hidden md:block">
+                  AIUB Childcare is a dedicated facility for the children of the
+                  students, faculties, and officials, to ensure that the parents
+                  can focus on their work and studies without any worries.
                 </p>
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                  <img
-                    src="/home/childcare.jpg"
-                    alt="childcare"
-                    className="w-full md:w-1/2 h-40 object-cover rounded-t-lg"
-                  />
-                  <p className="text-left bg-white p-2 rounded-lg hidden md:block">
-                    AIUB Childcare is a dedicated facility for the children of
-                    the students, faculties, and officials, to ensure that the
-                    parents can focus on their work and studies without any
-                    worries.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-4 ml-96 pl-48 opacity-50 hover:opacity-100">
-            <Link
-              href="/facilities"
-              className="text-xl text-blue-500 hover:font-bold"
-            >
-              <div className="flex items-center">
-                <p>Show more details</p>
-                <img src="/home/arrow.gif" className="w-8 ml-2" />
-              </div>
-            </Link>
-          </div>
+        </div>
+        <div className="flex justify-end mt-4 mr-8 opacity-50 hover:opacity-100">
+              <Link
+                href="/facilities"
+                className="text-xl text-blue-500 hover:font-bold"
+              >
+                <div className="flex items-right">
+                  <p>Show more details</p>
+                  <img src="/home/arrow.gif" className="w-8 ml-2" />
+                </div>
+              </Link>
+            </div>
+            </div>
       </section>
 
       <section className="contact" id="contact">

@@ -67,7 +67,7 @@ const ContactForm = () => {
 
   return (
     <section className="contact" id="contact">
-      <div className="pt-10 md:pt-20 lg:h-screen ">
+      <div className="lg:h-screen ">
         <div className="bg-gradient-to-r from-blue-100 to-blue-200 md:h-screen">
           <div className="text-2xl text-blue-600 ml-96 mb-4 ">
             <p className="p-4">
