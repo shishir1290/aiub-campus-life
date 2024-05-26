@@ -5,44 +5,45 @@ import Navbar from "@/components/navbar";
 
 const ClubDetailsModal = ({ club, onClose }: { club: any; onClose: any }) => {
     return (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-          <div className="bg-white p-8 w-1/2 h-3/5 overflow-y-auto rounded-lg shadow-xl relative">
-            <button
-              className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
-              onClick={onClose}
-            >
-              <img src="/activities/close.gif" alt="Close" className="w-6" />
-            </button>
-            <h2 className="text-xl font-bold mb-4">{club.name}</h2>
-            <div className="flex justify-center">
-            <img
-              src={club.image}
-              alt={club.name}
-              className="w-96 object-cover mb-4 rounded-lg"
-            />
-            </div>
-            <div className="mb-4">
-              <h3 className="text-lg font-bold">Objective</h3>
-              <p>{club.objective}</p>
-            </div>
-            <div className="mb-4">
-              <h3 className="text-lg font-bold">Activities</h3>
-              <p>{club.activities}</p>
-            </div>
-            <div className="mb-4">
-              <h3 className="text-lg font-bold">Membership</h3>
-              <p>{club.membership}</p>
-            </div>
-            <div className="mb-4">
-              <h3 className="text-lg font-bold">Leadership</h3>
-              <p>{club.leadership}</p>
-            </div>
-            <div className="mb-4">
-              <h3 className="text-lg font-bold">Future Outlook</h3>
-              <p>{club.future_outlook}</p>
-            </div>
-          </div>
+      <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+      <div className="bg-white p-8 w-full sm:w-3/4 lg:w-1/2 h-full sm:h-3/4 overflow-y-auto rounded-lg shadow-xl relative">
+        <button
+          className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+          onClick={onClose}
+        >
+          <img src="/activities/close.gif" alt="Close" className="w-6" />
+        </button>
+        <h2 className="text-xl font-bold mb-4">{club.name}</h2>
+        <div className="flex justify-center">
+          <img
+            src={club.image}
+            alt={club.name}
+            className="w-72 sm:w-96 object-cover mb-4 rounded-lg"
+          />
         </div>
+        <div className="mb-4">
+          <h3 className="text-lg font-bold">Objective</h3>
+          <p>{club.objective}</p>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-lg font-bold">Activities</h3>
+          <p>{club.activities}</p>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-lg font-bold">Membership</h3>
+          <p>{club.membership}</p>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-lg font-bold">Leadership</h3>
+          <p>{club.leadership}</p>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-lg font-bold">Future Outlook</h3>
+          <p>{club.future_outlook}</p>
+        </div>
+      </div>
+    </div>
+    
       );
       
 };
@@ -311,49 +312,49 @@ const Index = () => {
 
   return (
     <div>
-      <Navbar />
+  <Navbar />
 
-      <div className="container mx-auto px-4 mt-20">
-        <div className="pt-20 bg-gradient-to-r from-blue-100 to-blue-200 pb-8">
-          <div className="text-2xl text-blue-600 text-center mb-8">
-            <h1>Clubs
-            <hr className="border-2 border-blue-600 w-28 mx-auto rounded-xl" />
-            </h1>
-            
-          </div>
-          <div className="grid grid-cols-3 items-center gap-4 mx-16">
-            {clubs.map((club) => (
-              <div
-                key={club.id}
-                className="bg-slate-200 p-4 rounded-lg shadow-xl shadow-gray-400 w-96 hover:shadow-gray-600 cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out"
-                onClick={() => openClubDetails(club)}
-              >
-                <img
-                  src={club.image}
-                  alt={club.name}
-                  className="w-full h-40 object-cover rounded-t-lg hover:scale-105"
-                />
-                <div className="h-48">
-                  <p className="mt-2 text-center text-sky-600 font-bold">
-                    {club.name}
-                  </p>
-                  <p className="mt-2 text-center">{club.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+  <div className="container mx-auto px-4 mt-20">
+    <div className="pt-20 bg-gradient-to-r from-blue-100 to-blue-200 pb-8">
+      <div className="text-2xl text-blue-600 text-center mb-8">
+        <h1>
+          Clubs
+          <hr className="border-2 border-blue-600 w-28 mx-auto rounded-xl" />
+        </h1>
       </div>
-
-      <Footer />
-
-      {selectedClub && (
-        <div className={`transition-transform duration-300 ease-in-out ${selectedClub ? 'opacity-100 scale-100' : 'opacity-0 scale-95'} fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50`}>
-        <ClubDetailsModal club={selectedClub} onClose={closeClubDetails} />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 sm:mx-16">
+        {clubs.map((club) => (
+          <div
+            key={club.id}
+            className="bg-slate-200 p-4 rounded-lg shadow-xl shadow-gray-400 hover:shadow-gray-600 hover:scale-105 transition-transform duration-300 ease-in-out"
+            onClick={() => openClubDetails(club)}
+          >
+            <img
+              src={club.image}
+              alt={club.name}
+              className="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div className="h-48">
+              <p className="mt-2 text-center text-sky-600 font-bold">
+                {club.name}
+              </p>
+              <p className="mt-2 text-center">{club.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
-      
-      )}
     </div>
+  </div>
+
+  <Footer />
+
+  {selectedClub && (
+    <div className={`transition-transform duration-300 ease-in-out ${selectedClub ? 'opacity-100 scale-100' : 'opacity-0 scale-95'} fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50`}>
+      <ClubDetailsModal club={selectedClub} onClose={closeClubDetails} />
+    </div>
+  )}
+</div>
+
   );
 };
 

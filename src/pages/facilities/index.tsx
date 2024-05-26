@@ -7,21 +7,17 @@ const index = () => {
     <div>
       <Navbar />
 
-      <div className="container mx-auto mt-32">
+      <div className="container mx-auto mt-12 px-4 lg:px-0">
         <div className="text-2xl text-blue-600 text-center mb-8">
-          <h1>
-            Facilities
-            <hr className="border-2 border-blue-600 w-32 mx-auto" />
-          </h1>
+          <h1>Facilities</h1>
+          <hr className="border-2 border-blue-600 w-28 mx-auto" />
         </div>
 
         <div className="bg-gradient-to-r from-blue-100 to-blue-200 pb-8 rounded-lg">
-          {/* library */}
+          {/* Library */}
           <div className="text-xl text-blue-600 ml-8 pt-8">
-            <h1>
-              Library
-              <hr className="border-2 border-blue-600 w-20" />
-            </h1>
+            <h1>Library</h1>
+            <hr className="border-2 border-blue-600 w-20" />
           </div>
 
           <div className="px-8 pt-4">
@@ -52,9 +48,9 @@ const index = () => {
             </ul>
           </div>
 
-          <div className="container mx-auto px-5 py-2 ">
+          <div className="container mx-auto px-5 py-2">
             <div className="-m-1 flex flex-wrap md:-m-2">
-              <div className="flex w-1/2 flex-wrap">
+              <div className="flex w-full md:w-1/2 flex-wrap">
                 <div className="w-1/2 p-1 md:p-2">
                   <img
                     alt="gallery"
@@ -73,11 +69,11 @@ const index = () => {
                   <img
                     alt="gallery"
                     className="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition duration-300 ease-in-out"
-                    src="/facilities/library_1.jpg"
+                    src="/facilities/library_6.jpg"
                   />
                 </div>
               </div>
-              <div className="flex w-1/2 flex-wrap">
+              <div className="flex w-full md:w-1/2 flex-wrap">
                 <div className="w-full p-1 md:p-2">
                   <img
                     alt="gallery"
@@ -89,7 +85,7 @@ const index = () => {
                   <img
                     alt="gallery"
                     className="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition duration-300 ease-in-out"
-                    src="/facilities/library_6.jpg"
+                    src="/facilities/library_1.jpg"
                   />
                 </div>
                 <div className="w-1/2 p-1 md:p-2">
@@ -105,10 +101,8 @@ const index = () => {
 
           {/* Laboratory */}
           <div className="text-xl text-blue-600 ml-8 pt-8">
-            <h1>
-              Laboratory Facilities
-              <hr className="border-2 border-blue-600 w-52" />
-            </h1>
+            <h1>Laboratory Facilities</h1>
+            <hr className="border-2 border-blue-600 w-52" />
           </div>
 
           <div className="px-8 pt-4">
@@ -153,9 +147,9 @@ const index = () => {
             </ul>
           </div>
 
-          <div className="container mx-auto px-5 py-2 ">
+          <div className="container mx-auto px-5 py-2">
             <div className="-m-1 flex flex-wrap md:-m-2">
-              <div className="flex w-1/2 flex-wrap">
+              <div className="flex w-full md:w-1/2 flex-wrap">
                 <div className="w-1/2 p-1 md:p-2">
                   <img
                     alt="gallery"
@@ -163,6 +157,7 @@ const index = () => {
                     src="/facilities/laboratory_1.jpg"
                   />
                 </div>
+
                 <div className="w-1/2 p-1 md:p-2">
                   <img
                     alt="gallery"
@@ -178,7 +173,7 @@ const index = () => {
                   />
                 </div>
               </div>
-              <div className="flex w-1/2 flex-wrap">
+              <div className="flex w-full md:w-1/2 flex-wrap">
                 <div className="w-full p-1 md:p-2">
                   <img
                     alt="gallery"
@@ -206,10 +201,8 @@ const index = () => {
 
           {/* Co-curricular Activities */}
           <div className="text-xl text-blue-600 ml-8 pt-8">
-            <h1>
-              Co-curricular Activities
-              <hr className="border-2 border-blue-600 w-52" />
-            </h1>
+            <h1>Co-curricular Activities</h1>
+            <hr className="border-2 border-blue-600 w-52" />
           </div>
 
           <div className="px-8 pt-4">
@@ -279,9 +272,9 @@ const index = () => {
             </ul>
           </div>
 
-          <div className="container mx-auto px-5 py-2 ">
+          <div className="container mx-auto px-5 py-2">
             <div className="-m-1 flex flex-wrap md:-m-2">
-              <div className="flex w-1/2 flex-wrap">
+              <div className="flex w-full md:w-1/2 flex-wrap">
                 <div className="w-1/2 p-1 md:p-2">
                   <img
                     alt="gallery"
@@ -289,6 +282,7 @@ const index = () => {
                     src="/facilities/co_1.jpg"
                   />
                 </div>
+
                 <div className="w-1/2 p-1 md:p-2">
                   <img
                     alt="gallery"
@@ -304,7 +298,7 @@ const index = () => {
                   />
                 </div>
               </div>
-              <div className="flex w-1/2 flex-wrap">
+              <div className="flex w-full md:w-1/2 flex-wrap">
                 <div className="w-full p-1 md:p-2">
                   <img
                     alt="gallery"

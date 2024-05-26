@@ -15,12 +15,13 @@ const Index = () => {
     <div>
       <Navbar />
       <div className="container mx-auto px-4 mt-20">
-        <div className="pt-20 h-screen bg-gradient-to-r from-blue-100 to-blue-200">
+        <div className="pt-20 bg-gradient-to-r from-blue-100 to-blue-200 md:h-screen">
           <div className="text-2xl text-blue-600 text-center mb-8">
-            <h1>Student Activities <hr className="border-2 border-blue-600 w-52 mx-auto" /></h1>
-            
+            <h1>Student Activities</h1>
+            <hr className="border-2 border-blue-600 w-52 mx-auto" />
           </div>
-          <div className="grid grid-cols-4 items-center gap-4 mx-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 items-center mx-4">
+
             {/* activities 1 */}
             <div
               className="bg-white p-4 rounded-lg shadow-lg max-w-md hover:shadow-xl cursor-pointer"
@@ -126,7 +127,7 @@ const Index = () => {
                 <img
                   src="/activities/a4.jpg"
                   alt="Student Activities"
-                  className="w-72 rounded-lg"
+                  className="w-72 h-40 rounded-lg"
                 />
               </div>
               <p className="text-center text-blue-700">
@@ -210,7 +211,7 @@ const Index = () => {
                 <img
                   src="/activities/a7.jpg"
                   alt="Student Activities"
-                  className="w-72 rounded-lg"
+                  className="w-72 h-auto rounded-lg md:h-40"
                 />
               </div>
               <p className="text-center text-blue-700">
@@ -222,29 +223,31 @@ const Index = () => {
       </div>
 
       {/* Popup */}
-      {popupVisible && (
-        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 mt-20">
-          <div className="bg-white p-8 rounded-lg shadow-lg max-w-screen-lg relative">
-            <button
-              className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
-              onClick={() => setPopupVisible(false)}
-            >
-              <img src="/activities/close.gif" alt="Close" className="w-6" />
-            </button>
-            <div className="grid grid-cols-3 gap-4">
-              {selectedActivityImages.map((image, index) => (
-                <img
-                  key={index}
-                  src={image}
-                  alt={`Activity ${index + 1}`}
-                  className="rounded-lg w-full"
-                  style={{ maxWidth: "400px", maxHeight: "400px" }}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
+{popupVisible && (
+  <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 mt-52 md:mt-20">
+    <div className="bg-white p-8 rounded-lg shadow-lg max-w-screen-lg relative overflow-y-auto max-h-screen">
+      <button
+        className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+        onClick={() => setPopupVisible(false)}
+      >
+        <img src="/activities/close.gif" alt="Close" className="w-6" />
+      </button>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {selectedActivityImages.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Activity ${index + 1}`}
+            className="rounded-lg w-full"
+            style={{ maxWidth: "400px", maxHeight: "400px" }}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+)}
+
+
 
       <Footer />
     </div>
