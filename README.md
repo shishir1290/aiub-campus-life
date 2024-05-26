@@ -1,3 +1,33 @@
+# AIUB Campus Life Platform
+
+## Objective
+Develop a web-based platform to enhance the campus life experience for students at AIUB. The platform provides information about student activities, clubs, facilities, and other resources available on campus.
+
+## Requirements
+- **Frontend**: NextJS, Tailwind  CSS
+- **Tools**: Figma, Photoshop, Illustrator, webpack (optional)
+
+## Features
+- **Homepage**: Welcome message and overview of available features.
+- **Student Activities**: Display student activities with details like date, time, location, description, and organizer.
+- **Clubs Page**: List of student clubs with descriptions and contact information.
+- **Facilities Page**: Information about campus facilities like libraries, gyms, cafeterias, etc.
+- **Contact Page**: Form for students to submit inquiries or feedback.
+
+## Evaluation Criteria
+- **Functionality**: Effectively provides information about campus life resources.
+- **Code Quality**: Well-structured, readable, maintainable, and optimized code.
+- **UI/UX Design**: Intuitive, visually appealing, and responsive user interface.
+- **Security**: Basic security measures implemented, especially for form submissions.
+
+## How to Run
+1. Clone the repository.
+2. Open `localhost:5555` in a web browser.
+
+
+##
+##
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
