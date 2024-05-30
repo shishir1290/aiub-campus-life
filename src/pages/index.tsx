@@ -104,7 +104,7 @@ export default function Home() {
                 {images.map((image, index) => (
                   <motion.div
                     key={index}
-                    className="relative w-16 h-60 md:h-96 overflow-hidden hover:w-60 md:hover:w-96 transition-width duration-500 rounded-lg m-2"
+                    className="relative w-16 h-52 md:h-96 overflow-hidden hover:w-60 md:hover:w-96 transition-width duration-300 rounded-lg m-2"
                     initial={{ opacity: 0, y: -50 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -114,7 +114,7 @@ export default function Home() {
                       className="absolute inset-0 w-full h-full object-cover transition-transform transform rounded-lg"
                       alt={image.alt}
                     />
-                    <div className="absolute inset-0 flex justify-center items-end opacity-0 hover:opacity-100 transition-opacity hover:delay-150 duration-500 bg-black bg-opacity-30">
+                    <div className="absolute inset-0 flex justify-center items-end opacity-0 hover:opacity-100 transition-opacity hover:delay-150 duration-500 bg-black bg-opacity-20">
                       <div className="text-white text-lg font-bold p-4">
                         {image.caption}
                       </div>

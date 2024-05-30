@@ -12,7 +12,7 @@ const ImageSlider = ({
   return (
     <Carousel
       autoPlay
-      interval={5000}
+      interval={3000}
       infiniteLoop
       showStatus={false}
       showIndicators={false}
