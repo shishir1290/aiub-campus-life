@@ -82,10 +82,10 @@ const images = [
 export default function Home() {
   const [inViewRef, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   return (
-    <div className="w-screen">
+    <div>
       <Navbar />
       <section className="Home" id="home">
-        <div className=" pt-20 md:pt-20 h-screen w-screen">
+        <div className=" pt-20 md:pt-20 h-screen">
           <div className="">
             <ImageSlider images={home_images} />
           </div>
